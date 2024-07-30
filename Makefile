@@ -1,4 +1,4 @@
-MNIST_ML_ROOT=. # working directory
+MNIST_ML_ROOT=.# working directory
 LD_LIBRARY_PATH=.
 
 CC=g++
@@ -26,5 +26,5 @@ obj/data.o : $(SRC)/data.cpp
 	$(CC) -fPIC $(CFLAGS) -o obj/data.o -I$(INCLUDE_DIR) -c $(SRC)/data.cpp
 
 clean :
-	rm -r $(MNIST_ML_ROOT)/lib
+	rm -r $(MNIST_ML_ROOT)/main
 	rm -r $(MNIST_ML_ROOT)/lib
