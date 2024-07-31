@@ -1,4 +1,3 @@
-MNIST_ML_ROOT=..
 LD_LIBRARY_PATH=..
 CC=g++
 SRC := ./src

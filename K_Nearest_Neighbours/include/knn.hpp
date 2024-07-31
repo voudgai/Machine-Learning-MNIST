@@ -2,14 +2,11 @@
 #define KNN_H
 #include <vector>
 #include "data.hpp"
-
-class knn
+#include "common.hpp"
+class knn : public common_data
 {
     int k;
     std::vector<data *> *neighbours;
-    std::vector<data *> *training_data;
-    std::vector<data *> *test_data;
-    std::vector<data *> *validation_data;
 
 public:
     knn(int);
@@ -18,9 +15,6 @@ public:
 
     void find_k_nearest(data *);
 
-    void set_training_data(std::vector<data *> *);
-    void set_test_data(std::vector<data *> *);
-    void set_validation_data(std::vector<data *> *);
     void set_k(int);
 
     int prediction();
