@@ -1,11 +1,13 @@
-#include "../include/data_handler.hpp"
+// #include "../include/data_handler.hpp"
+// #include "../K_Nearest_Neighbours/include/knn.hpp"
 
-int main()
-{
-    data_handler *dh = new data_handler();
-    dh->read_feature_vector("./MNIST_DATA/train-images-idx3-ubyte");
-    dh->read_feature_labels("./MNIST_DATA/train-labels-idx1-ubyte");
-    dh->split_data();
-    dh->count_classes();
-    return 0;
-}
+// int main()
+// {
+//     data_handler *dh = new data_handler();
+//     dh->read_feature_vector("./MNIST_DATA/train-images-idx3-ubyte");
+//     dh->read_feature_labels("./MNIST_DATA/train-labels-idx1-ubyte");
+//     dh->split_data();
+//     dh->count_classes();
+
+//     return 0;
+// }
